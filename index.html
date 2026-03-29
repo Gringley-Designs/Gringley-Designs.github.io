@@ -93,7 +93,6 @@
     margin: 0; /* Remove default margins */
 }
         
-
        
 
 nav {
@@ -154,6 +153,12 @@ ul li ul li {
 
 li:focus-within a {
   outline: none;
+}
+
+        nav ul {
+    width: 100%; /* Ensures the menu takes the full width */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distributes items evenly */
 }
 
 @font-face {
