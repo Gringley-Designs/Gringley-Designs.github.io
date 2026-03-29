@@ -93,6 +93,68 @@
 }
         
 
+       
+
+nav {
+  font-family: monospace;
+}
+
+ul {
+  background: white;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #f9ab12;
+  background: #ffffff;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+li a {
+  color: #f9ab12;
+}
+
+li:hover {
+  background: white;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: white;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul, /* this is the line we add */
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+        li:focus-within a {
+  outline: none;
+}
+        
+
         
         @font-face {
   font-family: "Exo Bold";
@@ -120,4 +182,37 @@
     </style>
 </head>
 
+<nav>
+  <ul>
+      
+    <li><a href="Jewelry.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Jewelry</span></a>
+      <ul class="dropdown">
+        <li><a href="Examples.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Examples for Customs</span></a></li>
+        <li><a href="Bracelets.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Bracelets</span></a></li>
+        <li><a href="Earrings.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Earrings</span></a></li>
+        <li><a href="Keychains.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Keychains</span></a></li>
+        <li><a href="Necklaces.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Necklaces</span></a></li>
+        <li><a href="Pins.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Pins</span></a></li>
+        <li><a href="Rings.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Rings</span></a></li>
+      </ul>
+    </li>
+      
+<li><a href="Products.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Products</span></a>
+      <ul class="dropdown">
+        <li><a href="Accessories.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Accessories</span></a></li>
+        <li><a href="Clothes.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Clothes</span></a></li>
+        <li><a href="Stationary.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Stationary</span></a></li>
+      </ul>
+    </li>      
+
+      <li><a href="Order.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">How to Order</span></a></li>
+
+      <li><a href="Events.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Event Info</span></a></li>
+    
+      <li><a href="Socials.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Socials</span></a></li>
+
+  </ul>
+</nav>
+
+    
 </html>
