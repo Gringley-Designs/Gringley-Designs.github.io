@@ -111,13 +111,13 @@ li {
   color: #f9ab12;
   background: #ffffff;
   display: block;
-    float: none;
+  float: center; /* This should be changed */
   padding: 1rem;
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
 }
-  
+
 li a {
   color: #f9ab12;
 }
@@ -140,7 +140,7 @@ ul li ul {
 }
 
 ul li:hover > ul,
-ul li:focus-within > ul, /* this is the line we add */
+ul li:focus-within > ul,
 ul li ul:hover {
   visibility: visible;
   opacity: 1;
@@ -151,30 +151,27 @@ ul li ul li {
   clear: both;
   width: 100%;
 }
-        li:focus-within a {
+
+li:focus-within a {
   outline: none;
 }
-        
 
-        
-        @font-face {
+@font-face {
   font-family: "Exo Bold";
-       src: url('/exo/Exo-Bold.otf');
-       src: url('/exo/Exo-Bold.otf') format('otf');
-
-  /* Include other formats for wider support */
+  src: url('/exo/Exo-Bold.otf');
+  src: url('/exo/Exo-Bold.otf') format('otf');
 }
-         @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
 
-        .outlined-text {
-  -webkit-text-stroke-width: 2px; /* Sets the outline width */
-  -webkit-text-stroke-color: #c90270; /* Sets the outline color */
-  /* Standard property for Firefox and other modern browsers, though -webkit prefix often works everywhere */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.outlined-text {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #c90270;
   text-stroke-width: 2px; 
   text-stroke-color: #c90270;
 }
@@ -187,8 +184,6 @@ ul li ul li {
   <h1>
 <nav>
   <ul>
-
-      <li><a href="index.html"><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Home</span></a></li>
 
     <li><span style="color: #f9ab12; font-size: 15px; font-family: San-Serif;">Jewelry</span>
       <ul class="dropdown">
