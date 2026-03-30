@@ -92,6 +92,17 @@
 .container p, .container span {
     margin: 0; /* Remove default margins */
 }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .image-container img {
+            border: 2px solid #f9ab12;
+            margin: 0 10px;
+            max-width: 30%;
+        }
         
        
 
@@ -221,5 +232,13 @@ li:focus-within a {
   </ul>
   </h1>
 </nav>
+
+<body>
+    <div class="image-container">
+        <img src="pattern.PNG" alt="Image 1">
+        <img src="pattern.PNG" alt="Image 2">
+        <img src="pattern.PNG" alt="Image 3">
+    </div>
+</body>
     
 </html>
