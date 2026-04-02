@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -265,7 +266,70 @@ li:focus-within a {
   </h1>
 </nav>
 
-    
+
+<div class="image-carousel">
+    <img id="carousel-image" src="CS.jpg" alt="Image Carousel" style="border: 6px solid #fff; border-radius: 15px; width: 45%; display: inline-block;" />
+    <button id="next-button" style="font-size: 16px; font-weight: bold; display: inline-block;">→</button>
+    <div class="description" style="display: inline-block; vertical-align: top; margin-left: 10px;">
+        <h1 style="font-size: 40px; font-weight: bold; font-family: San-Serif;">Cheese Sticker</h1>
+        <p style="font-size: 16px;">This is a cut dye sticker of my cheese design. It's 64mm by 62mm, with coated paper and a glossy finish. Click arrow to see examples of the physical product.</p>
+        <div style="background-color: white; padding: 10px; display: inline-block;">$2.50</div>
+    </div>
+</div>
+
+<script>
+    const images = ["CS.jpg", "sticker2.png"];
+    let currentIndex = 0;
+
+    document.getElementById('next-button').addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % images.length;
+        document.getElementById('carousel-image').src = images[currentIndex];
+    });
+</script>
+
+<style>
+    .image-carousel {
+    display: flex;
+    align-items: center;
+}
+
+#carousel-image {
+    width: 35%; /* Reduced size */
+    margin-right: 15px; /* Added space */
+}
+
+.description {
+    margin-left: 10px;
+}
+
+    #next-button {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    .description h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .description p {
+        font-size: 16px;
+    }
+    .description div {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        display: inline-block;
+    }
+</style>
+
+
+
+  
 <body>
 
   
