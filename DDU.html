@@ -267,13 +267,14 @@ li:focus-within a {
 
 
 <div class="image-carousel">
-    <img id="carousel-image" src="DDU.jpg" alt="Image Carousel" style="border: 2px solid #000; width: 45%;" />
-    <button id="next-button" style="border: 2px solid white; font-weight: bold;">→</button>
+    <img id="carousel-image" src="DDU.jpg" alt="Image Carousel" style="border: 2px solid #000; width: 45%; display: inline-block;" />
+    <button id="next-button" style="border: 2px solid white; font-weight: bold; display: inline-block;">→</button>
     <div class="description" style="display: inline-block; vertical-align: top; margin-left: 10px;">
-        <p>Description of the current image goes here.</p>
+        <h1 style="font-size: 24px; font-weight: bold;">Image Title</h1>
+        <p style="font-size: 16px;">Description of the current image goes here. This is a brief paragraph providing more details.</p>
+        <div style="background-color: white; padding: 10px; display: inline-block;">$19.99</div>
     </div>
 </div>
-
 
 <script>
     const images = ["DDU.jpg", "book2.png", "book3.png"];
@@ -299,6 +300,18 @@ li:focus-within a {
         border: none;
         font-size: 24px;
         cursor: pointer;
+    }
+    .description h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .description p {
+        font-size: 16px;
+    }
+    .description div {
+        background-color: white;
+        padding: 10px;
+        display: inline-block;
     }
 </style>
 
