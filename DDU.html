@@ -267,9 +267,13 @@ li:focus-within a {
 
 
 <div class="image-carousel">
-    <img id="carousel-image" src="DDU.jpg" alt="Image Carousel" />
-    <button id="next-button">→</button>
+    <img id="carousel-image" src="DDU.jpg" alt="Image Carousel" style="border: 2px solid #000; width: 45%;" />
+    <button id="next-button" style="border: 2px solid white; font-weight: bold;">→</button>
+    <div class="description" style="display: inline-block; vertical-align: top; margin-left: 10px;">
+        <p>Description of the current image goes here.</p>
+    </div>
 </div>
+
 
 <script>
     const images = ["DDU.jpg", "book2.png", "book3.png"];
