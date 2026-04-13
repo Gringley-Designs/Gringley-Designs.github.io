@@ -6,7 +6,7 @@
         body {
             background-image: url('https://i.pinimg.com/originals/f2/ff/82/f2ff82037fcc5a2305be0ee82d79e893.gif');
             /* Optional: Additional background properties */
-            background-repeat: fit; /* Prevents the image from repeating */       /* Stretches/shrinks the image to cover the whole element */
+            background-repeat: no-repeat; /* Prevents the image from repeating */       /* Stretches/shrinks the image to cover the whole element */
             background-attachment: fixed; /* Fixes the image so it doesn't scroll with content */
             color: white;
             overflow-y: scroll;
@@ -214,9 +214,13 @@ li:focus-within a {
   position: absolute;
   top: 0;
   right: 0;
-  position: relative; /* REQUIRED: Anchors the button to this div */
-  width: 200px;
-  height: 100px;
+  width: 50px; /* Adjusted width */
+  height: 50px; /* Adjusted height */
+}
+
+.top-right-absolute img {
+  width: 100%; /* Ensures the image fits the button */
+  height: auto; /* Maintains aspect ratio */
 }
         
 
@@ -225,10 +229,13 @@ li:focus-within a {
 </head>
 
 
-
-
-      <button class="top-right-absolute"><a href="index.html"><img src="BTS.png" alt="Button Description"></a></button>
-
+<body>
+  <button class="top-right-absolute">
+    <a href="index.html">
+      <img src="BTS.png" alt="Button Description">
+    </a>
+  </button>
+</body>
       
 
     
