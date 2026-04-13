@@ -8,6 +8,7 @@
             /* Optional: Additional background properties */
             background-repeat: no-repeat; /* Prevents the image from repeating */       /* Stretches/shrinks the image to cover the whole element */
             background-attachment: fixed; /* Fixes the image so it doesn't scroll with content */
+            background-size: cover; /* Add this line */
             color: white;
             overflow-y: scroll;
             margin: 0;
@@ -213,9 +214,7 @@ li:focus-within a {
 .top-right-absolute {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 50px; /* Adjusted width */
-  height: 50px; /* Adjusted height */
+  left: 0; /* Change from right to left */
 }
 
 .top-right-absolute img {
@@ -237,12 +236,6 @@ li:focus-within a {
   </button>
 </body>
       
-
-    
-
-
-
-
     
     <head>
   <link
