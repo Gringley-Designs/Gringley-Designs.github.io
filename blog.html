@@ -198,7 +198,7 @@ li:focus-within a {
         .top-left-fixed {
   position: fixed;
   top: 10px;    /* Distance from top */
-  left: 10px;  /* Distance from right */
+  right: 10px;  /* Distance from right */
   z-index: 100; /* Keeps it above other content */
 }
 
@@ -214,6 +214,9 @@ li:focus-within a {
   position: absolute;
   top: 0;
   right: 0;
+  position: relative; /* REQUIRED: Anchors the button to this div */
+  width: 200px;
+  height: 100px;
 }
         
 
@@ -221,13 +224,10 @@ li:focus-within a {
     </style>
 </head>
 
-    
-<div class="container88">
-  <button class="top-right-absolute"><a href="index.html"><span style="color: #fff; font-size: 20px; font-family:Monospace;">My Button</span></a></button>
-</div>
 
 
-      <button class="top-left-fixed"><a href="index.html"><span style="color: #fff; font-size: 20px; font-family:Monospace;">My Button</span></a></button>
+
+      <button class="top-right-absolute"><a href="index.html"><img src="BTS.png" alt="Button Description"></a></button>
 
       
 
