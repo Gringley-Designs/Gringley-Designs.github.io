@@ -212,6 +212,15 @@ li:focus-within a {
         .top-left-absolute img {
             width: 100%;       /* Make the image fill the button */
             height: auto;      /* Maintain aspect ratio */
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.5); /* Adds a white drop shadow glow */
+            animation: float 3s ease-in-out infinite; /* Subtle floating animation */
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0); }
+    }
         }
         
     </style>
@@ -219,9 +228,9 @@ li:focus-within a {
 
 
 <body>
-  <button class="top-left-absolute">
+  <button class="top-left-absolute animate__animated animate__fadeInUp">
     <a href="index.html">
-      <img src="BTS.png" alt="Button Description">
+      <img src="BTS.png" alt="home">
     </a>
   </button>
 </body>
