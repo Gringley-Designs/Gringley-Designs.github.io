@@ -184,8 +184,6 @@ li:focus-within a {
 
          .hover-text {
         position: absolute;
-        top: 10px;
-        left: 10px;
         color: white;
         background-color: rgba(0, 0, 0, 0.7);
         padding: 5px;
@@ -243,12 +241,18 @@ li:focus-within a {
     </div>
 
    <div style="position: relative; height: 100vh;">
-    <a href="blog.html">
+    <a href="blog.html" onmousemove="moveText(event)">
         <img src="https://i.pinimg.com/originals/bd/53/23/bd5323d9617b35dd7ecc837bbb75097f.gif" alt="bloglink" style="width:50px; height:auto; position: absolute; bottom: 0; right: 0;">
-            <span class="hover-text">Click me!</span>
+        <span class="hover-text" id="hoverText">Click me!</span>
     </a>
 </div>
 
-
+<script>
+    function moveText(event) {
+        const hoverText = document.getElementById('hoverText');
+        hoverText.style.left = event.clientX + 'px';
+        hoverText.style.top = event.clientY + 'px';
+    }
+</script>
     
 </html>
