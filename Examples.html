@@ -22,91 +22,19 @@
       }
         
         
-     .gradient-text {
-            color: linear-gradient(ro right, #bbff29, #ffee03); 
-            background-image: linear-gradient(ro right, #bbff29, #ffee03);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
-            font-size: 30px;
-            font-family: "Exo Bold", Arial Black;
-            font-weight: bold;
-        }
-        
-        .container {
-    max-width: 300px;
-    max-height: 45px;
-    margin: 4px auto;
-    padding: 3px;
-    background-color: #aafc1c; /* Semi-transparent background */
-    border: 9px solid #97ed00;
-    border-radius: 75px;
-    outline: 6px solid #02d10c;
-    display: flex;
-    align-items: center; /* Vertically centers the content */
-    justify-content: center; /* Horizontally centers the content */
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s forwards;
-}
-        .container2 {
-    max-width: 80px;
-    max-height: 20px;
-    margin: 12px auto;
-    padding: 2px;
-    background-color: #f1fc1c;
-    border: 3px solid #fcb91c;
-    border-radius: 75px; /* Semi-transparent background */
-    display: flex;
-    align-items: center; /* Vertically centers the content */
-    justify-content: center; /* Horizontally centers the content */
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s forwards;
-}
+    
 
-        .containerbig {
-    position: fixed;
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center;     /* Centers the content vertically if needed */
-    max-width: 900px;
-    max-height: 21px;
-    margin: 6px auto;
-    padding: 6px;
-    background-color: #03eeff;
-    border: 7px solid #fc8a26;
-    outline: 6px solid #fc6b03;
-    border-radius: 75px; /* Semi-transparent background */
-    display: flex; /* Items side-by-side */
-    flex-direction: row;/* display: flex; flex-direction: column; */ /* Items stacked vertically */
-    gap: 10px; /* Space between items */
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s forwards;
-}
-        
-.container p, .container span {
-    margin: 0; /* Remove default margins */
-}
-
-        .image-container {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px;
-        }
         .image-container img {
             border: 6px solid #f9ab12;
             border-radius: 15px;
             margin: 0 10px;
             max-width: 30%;
         }
+        .image-container img {
+            margin: 0 10px;
+            max-width: 22%;
+        }
         
-       
-
 nav {
   font-family: monospace;
 }
@@ -148,6 +76,7 @@ ul li ul {
   margin-top: 0;
   left: 0;
   display: none;
+  z-index: 20;
 }
 
 ul li:hover > ul,
@@ -174,12 +103,6 @@ li:focus-within a {
      border-bottom: 4px solid #f9ab12; /* Adjust thickness and color as needed */
 }
 
-@font-face {
-  font-family: "Exo Bold";
-  src: url('/exo/Exo-Bold.otf');
-  src: url('/exo/Exo-Bold.otf') format('otf');
-}
-
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -187,20 +110,19 @@ li:focus-within a {
   }
 }
 
-.outlined-text {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #c90270;
-  text-stroke-width: 2px; 
-  text-stroke-color: #c90270;
-}
+
 
         .oval-container {
-            background-color: #FFFFFFBF;
-            border: 4px solid #ffffff;
-            border-radius: 50px;
-            padding: 20px;
-            margin-bottom: 20px;
-            display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          width: 450px;
+        height: 50px;
+        border: 6px solid white;
+        border-radius: 75px;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 6px;
+        margin: 10px;
         }
         .image-row {
             display: flex;
@@ -229,8 +151,7 @@ li:focus-within a {
     </style>
 </head>
 
-
-  <h1>
+<body>
 <nav>
   <ul>
       <li><a href="index.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Home</span></a></li>
@@ -250,7 +171,7 @@ li:focus-within a {
       <ul class="dropdown">
         <li><a href="Accessories.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Accessories</span></a></li>
         <li><a href="Clothes.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Clothes</span></a></li>
-        <li><a href="Stationary.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Stationary</span></a></li>
+        <li><a href="Stationary.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Stationery</span></a></li>
       </ul>
     </li>      
 
@@ -259,9 +180,7 @@ li:focus-within a {
       <li><a href="Events.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Event Info</span></a></li>
     
       <li><a href="Socials.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Socials</span></a></li>
-
   </ul>
-  </h1>
 </nav>
 
     
