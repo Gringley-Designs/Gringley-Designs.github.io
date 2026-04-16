@@ -92,6 +92,26 @@
 .container p, .container span {
     margin: 0; /* Remove default margins */
 }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .image-container img {
+        margin: 0 10px;
+        width: 75%; /* Change max-width to width */
+        height: auto;
+        border-radius: 15px; /* Adds rounded corners */
+        box-shadow: 0 6px 18px rgba(255, 255, 255, 0.5); /* Adds a white drop shadow glow */
+        animation: float 3s ease-in-out infinite; /* Subtle floating animation */
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0); }
+    }
         
        
 
@@ -182,12 +202,43 @@ li:focus-within a {
   text-stroke-color: #c90270;
 }
 
+        .oval-container {
+            background-color: #FFFFFFBF;
+            border: 4px solid #ffffff;
+            border-radius: 50px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .image-row img {
+            border: 6px solid #f9ab12;
+            border-radius: 15px;
+            margin: 0 10px;
+        }
+        .tall-image {
+            width: 100px;
+            height: 200px;
+        }
+        .wide-image {
+            width: 200px;
+            height: 133px;
+        }
+        .square-image {
+            width: 150px;
+            height: 150px;
+        }
+
         
     </style>
 </head>
 
 
-  <h1>
+<body>
 <nav>
   <ul>
       <li><a href="index.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Home</span></a></li>
@@ -207,7 +258,7 @@ li:focus-within a {
       <ul class="dropdown">
         <li><a href="Accessories.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Accessories</span></a></li>
         <li><a href="Clothes.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Clothes</span></a></li>
-        <li><a href="Stationary.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Stationary</span></a></li>
+        <li><a href="Stationary.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Stationery</span></a></li>
       </ul>
     </li>      
 
@@ -216,13 +267,52 @@ li:focus-within a {
       <li><a href="Events.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Event Info</span></a></li>
     
       <li><a href="Socials.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Socials</span></a></li>
-
   </ul>
-  </h1>
 </nav>
 
-    <div style="display: flex; justify-content: center; align-items: center;">
-<img src="construction.gif" alt="under construction" style="width:900px;height:auto;">
+    
+<body>
+
+<p></p>
+
+    <h1>
+    <body>        
+    <div class="animate__animated animate__fadeInUp">
+        <h1 style="color: #ffffff; animation-delay: 4s; font-size: 100px; font-family: San-Serif; text-shadow: 2 -2 15px #ffffff;">Clothes</h1>
     </div>
+
+        
+    <div class="image-container">
+        
+       <a href="DDU.html">
+           <img src="DDU.jpg" alt="DDU">
+       </a>        
+       <a href="BUD.html">
+            <img src="BUD.jpg" alt="BUD">
+       </a>
+         <a href="CS.html">
+            <img src="CS.jpg" alt="CS">
+       </a>
+        
+    </div>
+
+        
+         <div class="image-container">
+        
+       <a href="MS.html">
+           <img src="sheet1.jpg" alt="MS">
+       </a>
+             
+<a href="MS.html">
+            <img src="sheet1.jpg" alt="empty">
+       </a>
+         <a href="MS.html">
+            <img src="sheet1.jpg" alt="empty">
+       </a>
+    </div>
+
+     
+    
+</body>
     
 </html>
