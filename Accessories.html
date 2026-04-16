@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-     <style>
-        body {
-            background-image: url('pattern2.PNG');
-            /* Optional: Additional background properties */
-            background-repeat: repeat; /* Prevents the image from repeating */       /* Stretches/shrinks the image to cover the whole element */
-            background-attachment: fixed; /* Fixes the image so it doesn't scroll with content */
-            color: white;
-            overflow-y: scroll;
-            margin: 0;
-            font-family: exo-bold, Arial Black, sans-serif;
-        }
-        h1 {
-            text-align: center;
-            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
-            font-family: "Exo Bold", san-serif; 
-            font-size: 30px;
-        }
-      }
- 
+
+<style>
+body {
+background-image: url('pattern2.PNG');
+/* Optional: Additional background properties */
+background-repeat: repeat; /* Prevents the image from repeating */       /* Stretches/shrinks the image to cover the whole element */
+background-attachment: fixed; /* Fixes the image so it doesn't scroll with content */
+color: white;
+overflow-y: scroll;
+margin: 0;
+font-family: exo-bold, Arial Black, sans-serif;
+}
+h1 {
+text-align: center;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+font-family: "Exo Bold", sans-serif; 
+font-size: 30px;
+}
+}
+
+
+
+
+.container p, .container span {
+margin: 0; /* Remove default margins */
+}
+
+.image-container {
+display: flex;
+justify-content: space-between;
+margin: 20px;
+}
+.image-container img {
+margin: 0 10px;
+width: 75%; /* Change max-width to width */
+height: auto;
+border-radius: 15px; /* Adds rounded corners */
+box-shadow: 0 6px 18px rgba(255, 255, 255, 0.5); /* Adds a white drop shadow glow */
+animation: float 3s ease-in-out infinite; /* Subtle floating animation */
+}
+
+@keyframes float {
+0% { transform: translateY(0); }
+50% { transform: translateY(-5px); }
+100% { transform: translateY(0); }
+}
+
+
+
 nav {
   font-family: monospace;
 }
@@ -89,180 +118,117 @@ li:focus-within a {
      border-bottom: 4px solid #f9ab12; /* Adjust thickness and color as needed */
 }
 
-@font-face {
-  font-family: "Exo Bold";
-  src: url('/exo/Exo-Bold.otf');
-  src: url('/exo/Exo-Bold.otf') format('otf');
-}
 
 @keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+to {
+opacity: 1;
+transform: translateY(0);
 }
-
-.outlined-text {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #c90270;
-  text-stroke-width: 2px; 
-  text-stroke-color: #c90270;
-}
-
-         .hover-text {
-        position: absolute;
-        color: white;
-        font-family: monospace;
-        font-size: 15;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 5px;
-        border-radius: 5px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    a:hover .hover-text {
-        opacity: 1;
-    }
-
-        
-        body {
-            display: center;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-       .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 230px;
-        height: 50px;
-        border: 6px solid white;
-        border-radius: 75px;
-        background-color: rgba(255, 255, 255, 0.5);
-        margin: 12px; /* Center the containers */
-        padding: 6px;
-    }
-
-
-        .container img {
-            width: 40px;
-            height: 40px;
-            margin-left: 9px;
-        }
-
-
-        .container p {
-            color: #83d2f8;
-            font-size: 22px;
-            font-family: san-serif;
-            text-decoration: shine;
-        }
-.container g {
-            color: #83d2f8;
-            font-size: 26px;
-            font-family: san-serif;
-            text-decoration: shine;
-        }
-.container f {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 26px;
-            font-family: san-serif;
-            text-decoration: shine;
-        }
-
-.test1 {
-        display: flex; /* Changed to flex for alignment */
-        justify-content: center; /* Center the containers */
-        align-items: center;
-        flex-wrap: wrap; /* Allow wrapping if necessary */
-    }
-
-
- .pulse {
-  animation: glow-pulse 1.5s ease-in-out infinite alternate;
-}
-@keyframes glow-pulse {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 40px #ff4da6;
-  }
 }
 
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-img {
-    max-width: 100%;
-    height: auto;
+
+.oval-container {
+background-color: #FFFFFFBF;
+border: 4px solid #ffffff;
+border-radius: 50px;
+padding: 20px;
+margin-bottom: 20px;
+display: inline-block;
 }
-   
-    </style>
+.image-row {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+.image-row img {
+border: 6px solid #f9ab12;
+border-radius: 15px;
+margin: 0 10px;
+}
+.tall-image {
+width: 100px;
+height: 200px;
+}
+.wide-image {
+width: 200px;
+height: 133px;
+}
+.square-image {
+width: 150px;
+height: 150px;
+}
+
+
+</style>
 </head>
 
-<body>
+
+<h1>
 <nav>
-  <ul>
-      <li><a href="index.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Home</span></a></li>
+<ul>
+<li><a href="index.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Home</span></a></li>
 
-    <li><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Jewelry</span>
-      <ul class="dropdown">
-        <li><a href="Examples.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Examples for Customs</span></a></li>
-        <li><a href="Bracelets.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Bracelets</span></a></li>
-        <li><a href="Earrings.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Earrings</span></a></li>
-        <li><a href="Keychains.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Keychains</span></a></li>
-        <li><a href="Necklaces.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Necklaces</span></a></li>
-        <li><a href="Pins.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Pins & Rings</span></a></li>
-      </ul>
-    </li>
-      
+<li><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Jewelry</span>
+<ul class="dropdown">
+<li><a href="Examples.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Examples for Customs</span></a></li>
+<li><a href="Bracelets.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Bracelets</span></a></li>
+<li><a href="Earrings.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Earrings</span></a></li>
+<li><a href="Keychains.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Keychains</span></a></li>
+<li><a href="Necklaces.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Necklaces</span></a></li>
+<li><a href="Pins.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Pins & Rings</span></a></li>
+</ul>
+</li>
+
 <li><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Products</span>
-      <ul class="dropdown">
-        <li><a href="Accessories.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Accessories</span></a></li>
-        <li><a href="Clothes.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Clothes</span></a></li>
-        <li><a href="Stationary.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Stationery</span></a></li>
-      </ul>
-    </li>      
+<ul class="dropdown">
+<li><a href="Accessories.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Accessories</span></a></li>
+<li><a href="Clothes.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Clothes</span></a></li>
+<li><a href="Stationary.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Stationery</span></a></li>
+</ul>
+</li>      
 
-      <li><a href="Order.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">How to Order</span></a></li>
+<li><a href="Order.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">How to Order</span></a></li>
 
-      <li><a href="Events.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Event Info</span></a></li>
-    
-      <li><a href="Socials.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Socials</span></a></li>
-  </ul>
+<li><a href="Events.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Event Info</span></a></li>
+
+<li><a href="Socials.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Socials</span></a></li>
+
+</ul>
+</h1>
 </nav>
 
 
-    
 <body>
 
 <p></p>
 
-    <h1>
-    <body>        
-    <div class="animate__animated animate__fadeInUp">
-        <h1 style="color: #ffffff; animation-delay: 4s; font-size: 100px; font-family: San-Serif; text-shadow: 2 -2 15px #ffffff;">Accessories</h1>
-    </div>
+<h1>
+<body>        
+<div class="animate__animated animate__fadeInUp">
+<h1 style="color: #ffffff; animation-delay: 4s; font-size: 100px; font-family: San-Serif; text-shadow: 2 -2 15px #ffffff;">Accessories</h1>
+</div>
+
+<div class="image-container">
         
-    <div class="image-container">
-       <a href="CSQ.html">
-           <img src="squish1.jpg" alt="CSQ">
-       </a>        
+<a href="CSQ.html">
+<img src="squish1.jpg" alt="CSQ">
+</a>        
+
+                    <img src="pattern.PNG" alt="empty">
+
+                    <img src="pattern.PNG" alt="empty">
+
         <a href="CSQ.html">
             <img src="pattern.PNG" alt="empty">
        </a>
          <a href="CSQ.html">
             <img src="pattern.PNG" alt="empty">
        </a>
-    </div>
+</div>
 
-     
-    
+
+
 </body>
-    
+
 </html>
