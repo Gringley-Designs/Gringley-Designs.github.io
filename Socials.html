@@ -16,85 +16,11 @@
         h1 {
             text-align: center;
             text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
-            font-family: "Exo Bold", sans-serif; 
+            font-family: "Exo Bold", san-serif; 
             font-size: 30px;
         }
       }
-        
-        
-     .gradient-text {
-            color: linear-gradient(ro right, #bbff29, #ffee03); 
-            background-image: linear-gradient(ro right, #bbff29, #ffee03);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
-            font-size: 30px;
-            font-family: "Exo Bold", Arial Black;
-            font-weight: bold;
-        }
-        
-        .container {
-    max-width: 300px;
-    max-height: 45px;
-    margin: 4px auto;
-    padding: 3px;
-    background-color: #aafc1c; /* Semi-transparent background */
-    border: 9px solid #97ed00;
-    border-radius: 75px;
-    outline: 6px solid #02d10c;
-    display: flex;
-    align-items: center; /* Vertically centers the content */
-    justify-content: center; /* Horizontally centers the content */
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s forwards;
-}
-        .container2 {
-    max-width: 80px;
-    max-height: 20px;
-    margin: 12px auto;
-    padding: 2px;
-    background-color: #f1fc1c;
-    border: 3px solid #fcb91c;
-    border-radius: 75px; /* Semi-transparent background */
-    display: flex;
-    align-items: center; /* Vertically centers the content */
-    justify-content: center; /* Horizontally centers the content */
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s forwards;
-}
-
-        .containerbig {
-    position: fixed;
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center;     /* Centers the content vertically if needed */
-    max-width: 900px;
-    max-height: 21px;
-    margin: 6px auto;
-    padding: 6px;
-    background-color: #03eeff;
-    border: 7px solid #fc8a26;
-    outline: 6px solid #fc6b03;
-    border-radius: 75px; /* Semi-transparent background */
-    display: flex; /* Items side-by-side */
-    flex-direction: row;/* display: flex; flex-direction: column; */ /* Items stacked vertically */
-    gap: 10px; /* Space between items */
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s forwards;
-}
-        
-.container p, .container span {
-    margin: 0; /* Remove default margins */
-}
-        
-       
-
+ 
 nav {
   font-family: monospace;
 }
@@ -200,30 +126,34 @@ li:focus-within a {
 
         
         body {
-            display: flex;
+            display: center;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
         }
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            width: 230px;
-            height: 50px;
-            border: 6px solid white;
-            border-radius: 75px;
-            background-color: rgba(255, 255, 255, 0.5);
-            margin: 0 12px;
-            padding: 10px;
-        }
+       .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 50px;
+        border: 6px solid white;
+        border-radius: 75px;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 12px; /* Center the containers */
+        padding: 6px;
+    }
+
+
         .container img {
             width: 40px;
             height: 40px;
             margin-left: 9px;
         }
+
+
         .container p {
             color: #83d2f8;
             font-size: 22px;
@@ -243,12 +173,18 @@ li:focus-within a {
             text-decoration: shine;
         }
 
+.test1 {
+        display: flex; /* Changed to flex for alignment */
+        justify-content: center; /* Center the containers */
+        align-items: center;
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+    }
+
         
     </style>
 </head>
 
-
-  <h1>
+<body>
 <nav>
   <ul>
       <li><a href="index.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Home</span></a></li>
@@ -277,27 +213,26 @@ li:focus-within a {
       <li><a href="Events.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Event Info</span></a></li>
     
       <li><a href="Socials.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Socials</span></a></li>
-
   </ul>
-  </h1>
 </nav>
 
 
-
-
-<body>
-    <div class="container">
+<div class="test1">
+ <div class="container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/3840px-Instagram_logo_2016.svg.png" alt="Image 1">
         <f>. </f><p>@gringley_designs</p>
     </div>
     <div class="container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/500px-WhatsApp.svg.png" alt="Image 2">
-       <f>. .</f><g>WhatsApp</g>
+       <f>.</f><p>+1 (345) 325-9066</p>
     </div>
     <div class="container">
         <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-color-icon.png" alt="Image 3">
         <f>..</f><g>mr.cheeseman.</g>
     </div>
+
+</div>
+
 </body>
     
 
@@ -315,5 +250,7 @@ li:focus-within a {
         hoverText.style.top = event.clientY + 'px';
     }
 </script>
+
+
     
 </html>
