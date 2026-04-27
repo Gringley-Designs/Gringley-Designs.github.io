@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        body {
+            background-image: url('pattern2.PNG');
+            /* Optional: Additional background properties */
+            background-repeat: repeat; /* Prevents the image from repeating */       /* Stretches/shrinks the image to cover the whole element */
+            background-attachment: fixed; /* Fixes the image so it doesn't scroll with content */
+            color: white;
+            overflow-y: scroll;
+            margin: 0;
+            font-family: exo-bold, Arial Black, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+            font-family: "Exo Bold", sans-serif; 
+            font-size: 30px;
+        }
+      }
+        
+        
+    
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .image-container img {
+            margin: 0 10px;
+            max-width: 22%;
+        }
+        
+nav {
+  font-family: monospace;
+}
+
+ul {
+  background: white;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #f9ab12;
+  background: #ffffff;
+  display: block;
+  float: left; /* This should be changed */
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #f9ab12;
+}
+
+li:hover {
+  background: white;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: white;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 0;
+  left: 0;
+  display: none;
+  z-index: 20;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+        nav ul {
+    width: 100%; /* Ensures the menu takes the full width */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distributes items evenly */
+     border-bottom: 4px solid #f9ab12; /* Adjust thickness and color as needed */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+        .oval-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          width: 450px;
+        height: 50px;
+        border: 6px solid white;
+        border-radius: 75px;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 6px;
+        margin: 10px;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .image-row img {
+            border: 6px solid #f9ab12;
+            border-radius: 15px;
+            margin: 0 10px;
+        }
+        .tall-image {
+            width: 100px;
+            height: 200px;
+        }
+        .wide-image {
+            width: 200px;
+            height: 133px;
+        }
+        .square-image {
+            width: 150px;
+            height: 150px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+<nav>
+  <ul>
+      <li><a href="index.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Home</span></a></li>
+
+    <li><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Jewelry</span>
+      <ul class="dropdown">
+        <li><a href="Examples.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Examples for Customs</span></a></li>
+        <li><a href="Bracelets.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Bracelets</span></a></li>
+        <li><a href="Earrings.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Earrings</span></a></li>
+        <li><a href="Keychains.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Keychains & Phone Charms</span></a></li>
+        <li><a href="Necklaces.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Necklaces</span></a></li>
+        <li><a href="Pins.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Pins & Rings</span></a></li>
+        <li><a href="Missy.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Miscellaneous</span></a></li>
+      </ul>
+    </li>
+      
+<li><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Products</span>
+      <ul class="dropdown">
+        <li><a href="Accessories.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Accessories</span></a></li>
+        <li><a href="Clothes.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Clothes</span></a></li>
+        <li><a href="Stationary.html"><span style="color: #f9ab12; font-size: 10px; font-family: San-Serif;">Stationery</span></a></li>
+      </ul>
+    </li>      
+
+      <li><a href="Order.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">How to Order</span></a></li>
+
+      <li><a href="Events.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Event Info</span></a></li>
+    
+      <li><a href="Socials.html"><span style="color: #f9ab12; font-size: 25px; font-family: San-Serif;">Socials</span></a></li>
+  </ul>
+</nav>
+
+
+    
+<body>
+
+    <div class="oval-container">
+        <h2><span style="color: #f9ab12; font-size: 30px; font-family: San-Serif;">Go to 'orders' to see how to buy!</span></h2>
+    </div>
+    
+</body>
+    
+</html>
